@@ -11,8 +11,7 @@ def attack(char_name, char_class):
     if char_class == 'healer':
         damage_healer = 5 + randint(-3, 1)
         return (f'{char_name} нанёс урон противнику равный {damage_healer}')
-    else:
-        return (f'{char_name} нанес урон противнику равный 5')
+    return (f'{char_name} нанес урон противнику равный 5')
 
 
 def defence(char_name, char_class):
@@ -25,8 +24,7 @@ def defence(char_name, char_class):
     if char_class == 'healer':
         defence_healer = 10 + randint(2, 5)
         return (f'{char_name} блокировал {defence_healer} урона')
-    else:
-        return (f'{char_name} блокировал 10 урона')
+    return (f'{char_name} блокировал 10 урона')
 
 
 def special(char_name, char_class):
@@ -36,6 +34,7 @@ def special(char_name, char_class):
         return (f'{char_name} применил специальное умение «Атака 40»')
     if char_class == 'healer':
         return (f'{char_name} применил специальное умение «Защита 40»')
+    return (f'{char_name} не применил специальное умение')
 
 
 def start_training(char_name, char_class):
